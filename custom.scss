@@ -44,18 +44,7 @@ html, body {
 }
 
 /* Titles */
-.main-title {
-  text-align: center;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
-  z-index: 3;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-}
+
 
 .bio-text, .section-title {
   color: #ffffff;
@@ -114,19 +103,6 @@ html, body {
 }
 .cover-box .image-section h3 {
   color: #212529;
-}
-
-/* Rickroll Link */
-.rickroll-link {
-  color: #FCAE28;
-  font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer;
-}
-.rickroll-link:hover,
-.rickroll-link:focus {
-  color: #fdca73;
-  outline: none;
 }
 
 /* White Box */
@@ -328,17 +304,17 @@ html, body {
   font-weight: bold;
   margin-bottom: 1.5rem;
 
-  /* Dark base fallback color */
+  // Dark base fallback
   color: #7f0aa2;
 
-  /* Pastel gradient text */
+  // Pastel gradient text
   background: linear-gradient(
     45deg,
-    #9fd4ff,  /* pastel blue */
-    #ff6b6b,  /* pastel pink */
-    #ffb973,  /* pastel peach */
-    #87f0fe,  /* pastel aqua */
-    #552d89   /* pastel lavender */
+    #9fd4ff,  // pastel blue
+    #ff6b6b,  // pastel pink
+    #ffb973,  // pastel peach
+    #87f0fe,  // pastel aqua
+    #552d89   // pastel lavender
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -347,14 +323,11 @@ html, body {
   letter-spacing: 0.08em;
   font-family: 'Montserrat', sans-serif;
   border-radius: 0.2em;
-  /* Black outline for letters */
-  -webkit-text-stroke: 00000.1px linear-gradient(
-    45deg,
-    #000000,  /* black */
-    #000000   /* black */);
-   /* for other browsers if supported */
 
-  /* Optional subtle shadow for extra pop */
+  // Text stroke (for supported browsers)
+  -webkit-text-stroke: 0.1px #000;
+
+  // Optional subtle shadow for extra pop
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
 
   z-index: 3;
@@ -362,6 +335,47 @@ html, body {
   -webkit-user-select: none;
   -moz-user-select: none;
 }
+
+
+  .main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+
+  // Dark base fallback
+  color: #7f0aa2;
+
+  // Pastel gradient text
+  background: linear-gradient(
+    45deg,
+    #9fd4ff,  // pastel blue
+    #ff6b6b,  // pastel pink
+    #ffb973,  // pastel peach
+    #87f0fe,  // pastel aqua
+    #552d89   // pastel lavender
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  letter-spacing: 0.08em;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 0.2em;
+
+  // Text stroke (for supported browsers)
+  -webkit-text-stroke: 0.1px #000;
+
+  // Optional subtle shadow for extra pop
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+
+  z-index: 3;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
 
 /* Responsive Text Sizing and Centering */
 .responsive-center-text {
@@ -391,6 +405,8 @@ html, body {
   .responsive-center-text {
     font-size: 1.2rem;
   }
+} /* <-- this closing brace was missing */
+
 /* Section Styling */
 .section {
   margin-bottom: 2rem;
@@ -415,18 +431,4 @@ html, body {
   font-size: 1rem;
   list-style: none;
   padding-left: 0;
-}
-.section-list li {
-  margin-bottom: 0.5rem;
-}
-/* Image Hover Fade Effect */
-.fade-img {
-  opacity: 0.5;
-  transition: opacity 0.6s ease-in-out;
-
-  &:hover {
-    opacity: 1;
-  }
-}
-
 }

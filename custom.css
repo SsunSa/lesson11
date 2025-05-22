@@ -43,19 +43,6 @@ html, body {
 }
 
 /* Titles */
-.main-title {
-  text-align: center;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  margin-bottom: 1.5rem;
-  color: #ffffff;
-  z-index: 3;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-}
-
 .bio-text, .section-title {
   color: #ffffff;
   z-index: 2;
@@ -120,20 +107,6 @@ html, body {
 
 .cover-box .image-section h3 {
   color: #212529;
-}
-
-/* Rickroll Link */
-.rickroll-link {
-  color: #FCAE28;
-  font-weight: bold;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.rickroll-link:hover,
-.rickroll-link:focus {
-  color: #fdca73;
-  outline: none;
 }
 
 /* White Box */
@@ -351,9 +324,7 @@ html, body {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  /* Dark base fallback color */
   color: #7f0aa2;
-  /* Pastel gradient text */
   background: linear-gradient(45deg, #9fd4ff, #ff6b6b, #ffb973, #87f0fe, #552d89);
   background-clip: text;
   -webkit-background-clip: text;
@@ -361,10 +332,29 @@ html, body {
   letter-spacing: 0.08em;
   font-family: "Montserrat", sans-serif;
   border-radius: 0.2em;
-  /* Black outline for letters */
-  -webkit-text-stroke: 0.1px linear-gradient(45deg, #000000, #000000);
-  /* for other browsers if supported */
-  /* Optional subtle shadow for extra pop */
+  -webkit-text-stroke: 0.1px #000;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+  z-index: 3;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #7f0aa2;
+  background: linear-gradient(45deg, #9fd4ff, #ff6b6b, #ffb973, #87f0fe, #552d89);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.08em;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.2em;
+  -webkit-text-stroke: 0.1px #000;
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
   z-index: 3;
   user-select: none;
@@ -398,37 +388,29 @@ html, body {
   .responsive-center-text {
     font-size: 1.2rem;
   }
-  /* Section Styling */
-  .section {
-    margin-bottom: 2rem;
-  }
-  .section-title-bold {
-    font-weight: bold;
-    font-size: 1.75rem;
-    color: #ffffff;
-    margin-bottom: 0.5rem;
-  }
-  .section-text {
-    color: #ffffff;
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  /* Optional: style for the list */
-  .section-list {
-    color: #ffffff;
-    font-size: 1rem;
-    list-style: none;
-    padding-left: 0;
-  }
-  .section-list li {
-    margin-bottom: 0.5rem;
-  }
-  /* Image Hover Fade Effect */
-  .fade-img {
-    opacity: 0.5;
-    transition: opacity 0.6s ease-in-out;
-  }
-  .fade-img:hover {
-    opacity: 1;
-  }
+} /* <-- this closing brace was missing */
+/* Section Styling */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section-title-bold {
+  font-weight: bold;
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.section-text {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Optional: style for the list */
+.section-list {
+  color: #ffffff;
+  font-size: 1rem;
+  list-style: none;
+  padding-left: 0;
 }/*# sourceMappingURL=custom.css.map */

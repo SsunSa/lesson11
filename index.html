@@ -17,7 +17,7 @@
 
   <style>
     body {
-      background-color: #4d81b6;
+      background-color: #8eb4da;
     }
 
     .main-title {
@@ -28,6 +28,16 @@
     .image-section img {
       max-width: 100%;
       height: auto;
+    }
+
+    /* Opacity transition for images */
+    .fade-img {
+      opacity: 0.5;
+      transition: opacity 1.05s ease-in-out;
+    }
+
+    .fade-img:hover {
+      opacity: 1;
     }
   </style>
 </head>
@@ -85,7 +95,7 @@
           <!-- Image Section -->
           <div class="image-section text-center mt-4">
             <h3 class="mb-3 w3-animate-left">Cover art from ULTRAKILL</h3>
-            <img src="ultrakill-cover-1.jpg" alt="ULTRAKILL Cover Art" lass="fade-img" />
+            <img src="images/ultrakill-cover-1.jpg" alt="ULTRAKILL Cover Art" class="fade-img" />
           </div>
         </div>
       </div>
