@@ -29,15 +29,6 @@ html, body {
     -webkit-clip-path: none;
   }
 }
-.fade-img {
-  opacity: 0.5;
-  transition: opacity 0.6s ease-in-out;
-}
-
-.fade-img:hover {
-  opacity: 1;
-}
-
 /* Container */
 .container {
   position: relative;
@@ -431,5 +422,13 @@ html, body {
   }
   .section-list li {
     margin-bottom: 0.5rem;
+  }
+  /* Image Hover Fade Effect */
+  .fade-img {
+    opacity: 0.5;
+    transition: opacity 0.6s ease-in-out;
+  }
+  .fade-img:hover {
+    opacity: 1;
   }
 }/*# sourceMappingURL=custom.css.map */
