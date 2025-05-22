@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* Reset and Base */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #3aa1fb;
+  color: #212529;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background clip path */
+#bg {
+  background-color: #023867;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  clip-path: polygon(0 0, 100% 0, 100% 12%, 0 12%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 12%, 0 12%);
+}
+
+@media (max-width: 575px) {
+  #bg {
+    clip-path: none;
+    -webkit-clip-path: none;
+  }
+}
+/* Container */
+.container {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 15px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Titles */
+.main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  z-index: 3;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+.bio-text, .section-title {
+  color: #ffffff;
+  z-index: 2;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+/* Hobby Box */
+.hobby-box {
+  background-color: white;
+  border-left: 5px solid #FCAE28;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+
+.hobby-box .hobby-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hobby-box .hobby-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.hobby-box .hobby-list li span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #3aa1fb;
+  border-radius: 50%;
+}
+
+.hobby-box .hobby-list li strong {
+  margin-left: 40px;
+  display: inline-block;
+}
+
+/* Image Section */
+.image-section {
+  text-align: center;
+  z-index: 2;
+}
+
+.image-section h3 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.image-section .game-cover {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cover-box .image-section h3 {
+  color: #212529;
+}
+
+/* Rickroll Link */
+.rickroll-link {
+  color: #FCAE28;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rickroll-link:hover,
+.rickroll-link:focus {
+  color: #fdca73;
+  outline: none;
+}
+
+/* White Box */
+.white-box {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  color: #212529;
+}
+
+/* Hobbies Box List */
+.hobbies-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hobbies-box ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+  color: #212529;
+}
+
+.hobbies-box ul li span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #023867;
+  border-radius: 50%;
+}
+
+/* Bootstrap 5 Scrolling Nav Template Styles Part 1 */
+/* Offsets for xxl screens */
+.offset-xxl-0 {
+  margin-left: 0 !important;
+}
+
+.offset-xxl-1 {
+  margin-left: 8.333333% !important;
+}
+
+.offset-xxl-2 {
+  margin-left: 16.666667% !important;
+}
+
+.offset-xxl-3 {
+  margin-left: 25% !important;
+}
+
+.offset-xxl-4 {
+  margin-left: 33.333333% !important;
+}
+
+.offset-xxl-5 {
+  margin-left: 41.666667% !important;
+}
+
+.offset-xxl-6 {
+  margin-left: 50% !important;
+}
+
+.offset-xxl-7 {
+  margin-left: 58.333333% !important;
+}
+
+.offset-xxl-8 {
+  margin-left: 66.666667% !important;
+}
+
+.offset-xxl-9 {
+  margin-left: 75% !important;
+}
+
+.offset-xxl-10 {
+  margin-left: 83.333333% !important;
+}
+
+.offset-xxl-11 {
+  margin-left: 91.666667% !important;
+}
+
+/* Gutters for xxl */
+.g-xxl-0 {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}
+
+.g-xxl-1 {
+  --bs-gutter-x: 0.25rem !important;
+  --bs-gutter-y: 0.25rem !important;
+}
+
+.g-xxl-2 {
+  --bs-gutter-x: 0.5rem !important;
+  --bs-gutter-y: 0.5rem !important;
+}
+
+.g-xxl-3 {
+  --bs-gutter-x: 1rem !important;
+  --bs-gutter-y: 1rem !important;
+}
+
+.g-xxl-4 {
+  --bs-gutter-x: 1.5rem !important;
+  --bs-gutter-y: 1.5rem !important;
+}
+
+.g-xxl-5 {
+  --bs-gutter-x: 3rem !important;
+  --bs-gutter-y: 3rem !important;
+}
+
+/* Tables */
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-bg: transparent;
+  --bs-table-striped-color: #212529;
+  --bs-table-active-bg: transparent;
+  --bs-table-active-color: #212529;
+  --bs-table-hover-bg: transparent;
+  --bs-table-hover-color: #212529;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  vertical-align: top;
+  border-color: #dee2e6;
+  border-collapse: collapse;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.75rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+.table > tbody {
+  vertical-align: inherit;
+}
+
+.table > thead {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Striped rows */
+.table-striped > tbody > tr:nth-of-type(odd) {
+  --bs-table-accent-bg: #f8f9fa;
+  color: #212529;
+}
+
+/* Hover rows */
+.table-hover > tbody > tr:hover {
+  --bs-table-hover-bg: #f1f3f5;
+  color: #212529;
+}
+
+/* Forms */
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #021024;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control::-moz-placeholder {
+  color: #6c757d;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #6c757d;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #6c757d;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  /* Dark base fallback color */
+  color: #7f0aa2;
+  /* Pastel gradient text */
+  background: linear-gradient(45deg, #9fd4ff, #ff6b6b, #ffb973, #87f0fe, #552d89);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.08em;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.2em;
+  /* Black outline for letters */
+  -webkit-text-stroke: 0.1px linear-gradient(45deg, #000000, #000000);
+  /* for other browsers if supported */
+  /* Optional subtle shadow for extra pop */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.4);
+  z-index: 3;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/* Responsive Text Sizing and Centering */
+.responsive-center-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 0 1rem; /* Prevents overflow on small screens */
+  font-size: 2.5rem; /* Default full-screen size */
+}
+
+/* Shrink text on smaller screens */
+@media (max-width: 992px) {
+  .responsive-center-text {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .responsive-center-text {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .responsive-center-text {
+    font-size: 1.2rem;
+  }
+  /* Section Styling */
+  .section {
+    margin-bottom: 2rem;
+  }
+  .section-title-bold {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+  }
+  .section-text {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  /* Optional: style for the list */
+  .section-list {
+    color: #ffffff;
+    font-size: 1rem;
+    list-style: none;
+    padding-left: 0;
+  }
+  .section-list li {
+    margin-bottom: 0.5rem;
+  }
+}/*# sourceMappingURL=custom.css.map */
